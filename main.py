@@ -25,7 +25,7 @@ while True:
     result = open('nohup.out', 'r').read().find('Done')
     if result > -1:
         break
-        
+
 print("**script**: server has started!")
 time.sleep(10)
 print("**script**: starting ngrok tcp")
@@ -35,9 +35,9 @@ time.sleep(10)
 while True:
     print("**script**: saving world...")
     os.system('zip -FSr world.zip world')
-    time.sleep(5)
+    time.sleep(20)
     os.system('node savetodb.js')
     print("**script**: world saved!")
-    time.sleep(10)
+    time.sleep(30)
 
 
