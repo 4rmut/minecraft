@@ -38,6 +38,6 @@ while True:
     time.sleep(20)
     os.system('node savetodb.js')
     print("**script**: world saved!")
-    time.sleep(30)
+    time.sleep(40)
 
 
